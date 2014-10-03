@@ -1,0 +1,152 @@
+[
+  {
+    "caption": "ProjectFiles: Show all",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "."
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show all folders",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": ".",
+      "folders": true,
+      "files": false,
+      "display": "short"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show configs",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "(^config\\.\\w+$|/config/)"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show routes",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "routes.\\w+$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show models",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "(/models/|[^/]+_model\\.\\w+$)",
+      "ignore": "tests?/"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show migrations",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "/migrations/",
+      "ignore": "tests?/"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show controllers",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "(controllers/[^/]+$|_controller\\.\\w+$|Controller\\.\\w+$)",
+      "ignore": "test/"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show views",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "(/views/)"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show tests",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "(/tests/)"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Toggle test",
+    "command": "goto_project_file_by_regexp_replace",
+    "args": {
+      "regexps": [
+        ["^/([^/]+)\\.(\\w+)$", "\\1_(unit_|)test\\.\\2"],
+        ["^/([^/]+)(?:_unit_test)\\.(\\w+)$", "\\1\\.\\2"],
+        ["^/([^/]+)(?:_test)\\.(\\w+)$", "\\1\\.\\2"],
+      ]
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show yaml",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.yml$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show haml",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.haml$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show html",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.html$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show css",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.css$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show erb",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.erb$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show js",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.js$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Show coffee",
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.js\\.coffee$"
+    },
+  },
+
+  {
+    "caption": "ProjectFiles: Print project files",
+    "command": "print_project_files"
+  }
+]

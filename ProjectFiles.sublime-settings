@@ -1,0 +1,4 @@
+{
+  "ignore": "^\\.git|\\.pyc$", // "(^\\.|^tmp|temp|^public|^library|/\\.|\\.pyc$|^vendor/|web/assets|debug|storage/|img/)",
+  "maximal_files_count": 5000,
+}

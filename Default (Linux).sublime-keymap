@@ -1,0 +1,223 @@
+[
+  {
+    "keys": ["ctrl+n", "n"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "."
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+u"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": ".",
+      "folders": true,
+      "files": false,
+      "display": "short"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+g"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "(^config\\.\\w+$|(/|^)config/)"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+r"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "routes.\\w+$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+m"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "((?:/|^)models/|[^/]+(?:[a-z]M|_m)odel\\.\\w+$)",
+      "ignore": "tests?/"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+i"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "(?:/|^)migrations/",
+      "ignore": "tests?/"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+c"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "((?:/|^)controllers/[^/]+$|[^/]+(?:[a-z]C|_c)ontroller\\.\\w+$$)",
+      "ignore": "test/"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+v"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "((?:/|^)views/)"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+t"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "((?:/|^)tests/|_test\\.\\w+$)"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "t"],
+    "command": "goto_project_file_by_regexp_replace",
+    "args": {
+      "regexps": [
+        [".*/(\\w+)\\.(\\w+)$", "\\1_(unit_|)(test|spec)\\.\\2"],
+        [".*/(\\w+)_(test|spec)\\.(\\w+)$", "\\1.\\3"],
+      ]
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "y"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.yml$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "a"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.haml$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "h"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.html$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "c"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.css$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "e"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.erb$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "j"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.(?:js|coffee)$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "h"],
+    "command": "goto_project_file_by_regexp",
+    "args": {
+      "regexp": "\\.(?:html|haml|slim)$"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  },
+
+  {
+    "keys": ["ctrl+n", "ctrl+p"],
+    "command": "print_project_files",
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
+  }
+]
