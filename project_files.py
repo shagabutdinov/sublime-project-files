@@ -83,6 +83,7 @@ class ProjectFiles():
       pattern = pattern.replace('__DOUBLE_STAR__', '.*')
       pattern = pattern.replace('__QUESTION__', '.')
       pattern = '^' + pattern
+      print(pattern)
       regexps.append(pattern)
 
     return '(' + '|'.join(regexps) + ')'

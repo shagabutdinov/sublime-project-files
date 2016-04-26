@@ -80,7 +80,7 @@
     "keys": ["ctrl+n", "ctrl+c"],
     "command": "goto_project_file_by_regexp",
     "args": {
-      "regexp": "((?:/|^)controllers/[^/]+$|[^/]+(?:[a-z]C|_c)ontroller\\.\\w+$$)",
+      "regexp": "((?:/|^)controllers/|[^/]+(?:[a-z]C|_c)ontroller\\.\\w+$$)",
       "ignore": "test/"
     },
     "context": [
