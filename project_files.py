@@ -119,11 +119,4 @@ class ProjectFiles():
     except:
       return []
 
-    # if len(result) > self.maximal_files_count:
-    #   message = 'FileList: too much files in project; try setup "ignore" ' + \
-    #     'or "maximal_files_count" setting properly; current ' + \
-    #     '"maximal_files_count" setting value: ' + str(self.maximal_files_count)
-    #   sublime.error_message(message)
-    #   raise Exception(message)
-
     return result
