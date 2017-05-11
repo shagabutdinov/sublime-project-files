@@ -83,7 +83,7 @@ class ProjectFiles():
       pattern = pattern.replace('__DOUBLE_STAR__', '.*')
       pattern = pattern.replace('__QUESTION__', '.')
       pattern = '^' + pattern
-      print(pattern)
+
       regexps.append(pattern)
 
     return '(' + '|'.join(regexps) + ')'
@@ -95,6 +95,9 @@ class ProjectFiles():
         short_path = file_path[len(info['path']) + 1:]
 
         is_dir = os.path.isdir(file_path)
+
+        if self.is_ignored(file_path, is_dir, info):
+          continue
 
         if self.is_ignored(short_path, is_dir, info):
           continue
